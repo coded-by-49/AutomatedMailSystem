@@ -57,7 +57,7 @@ public class Main{
 
             // setting up the transport module
             Transport transport  = session.getTransport("smtp");
-            transport.connect("smtp.gmail.com", "fabianbernard49@gmail.com",myPassword);
+            transport.connect("smtp.gmail.com", myEmail,myPassword);
             transport.sendMessage(msg, msg.getAllRecipients());
 
             transport.close();
